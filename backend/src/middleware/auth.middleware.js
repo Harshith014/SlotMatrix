@@ -1,0 +1,31 @@
+const jwt = require("jsonwebtoken");
+
+const ApiError = require("../utils/ApiError");
+
+module.exports = (req,res,next)=>{
+
+    const auth=req.headers.authorization;
+
+    if(!auth)
+        return next(new ApiError(401,"Unauthorized"));
+
+    const token=auth.split(" ")[1];
+
+    try{
+
+        const decoded=jwt.verify(
+            token,
+            process.env.JWT_SECRET
+        );
+
+        req.user=decoded;
+
+        next();
+
+    }catch(err){
+
+        next(new ApiError(401,"Invalid Token"));
+
+    }
+
+};
