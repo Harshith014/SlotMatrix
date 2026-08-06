@@ -1251,9 +1251,9 @@ This project is licensed under the MIT License.
 
 **Sai Harshith**
 
-GitHub: *Add your GitHub profile link here.*
+**GitHub:** [Harshith014](https://github.com/Harshith014)
 
-LinkedIn: *Add your LinkedIn profile link here.*
+**LinkedIn:** [Sai Harshith](https://www.linkedin.com/in/sai-harshith-m-4409b831a/)
 
 ---
 
